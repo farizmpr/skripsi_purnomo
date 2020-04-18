@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
+
         mList1 = findViewById(R.id.list1);
         appList = new ArrayList<>();
 
