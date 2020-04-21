@@ -19,6 +19,7 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:layout_collapseMode="pin"
             tools:title="News Feed"
+            android:background="#4FBA6E"
             >
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
@@ -41,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="12dp"
                 android:padding="12dp"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#000000"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 tools:text="@string/news_name"/>
@@ -54,7 +55,7 @@
                 android:layout_weight="9"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#707070"
                 android:textSize="16sp"
                 android:textStyle="bold"
                 tools:text="@string/example_date"/>
@@ -64,16 +65,16 @@
                 android:layout_height="188dp"
                 android:layout_gravity="center"
                 app:cardCornerRadius="10dp">
-            <ImageView
-                android:id="@+id/img_poster"
-                app:layout_collapseMode="parallax"
-                android:src="@color/colorPrimaryDark"
-                android:layout_gravity="center"
-                tools:background="@drawable/round_outline"
-                android:scaleType="center"
-                android:layout_width="283dp"
-                android:layout_height="188dp"
-                tools:ignore="ContentDescription" />
+                <ImageView
+                    android:id="@+id/img_poster"
+                    app:layout_collapseMode="parallax"
+                    android:src="@color/colorPrimaryDark"
+                    android:layout_gravity="center"
+                    tools:background="@drawable/round_outline"
+                    android:scaleType="center"
+                    android:layout_width="283dp"
+                    android:layout_height="188dp"
+                    tools:ignore="ContentDescription" />
             </androidx.cardview.widget.CardView>
             <TextView
                 android:layout_width="match_parent"
@@ -84,7 +85,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:text="@string/description"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -105,7 +106,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:text="@string/content"
-                android:textColor="@color/colorPrimary"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold"/>
 
@@ -144,6 +145,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@android:color/white"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
